@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,79 @@
     <link rel="stylesheet" href="./style.css">
     <title>Survey form</title>
 </head>
+
 <body>
     <h1 id="title">Survey Form</h1>
     <div id="form">
         <p id="description">Let us know how we can improve freeCodeCamp</p>
         <form action="" id="survey-form">
             <div id="basic-info">
-                    <label for="name" id="name-label">* Name: <input type="text" id="name" placeholder="Enter your name" required></label>
-                    <label for="email" id="email-label">* Email: <input type="email" id="email" placeholder="Enter your Email" required></label>
-                    <label for="number" id="number-label">* Age: <input type="number" min="1" max="125" id="number" placeholder="Age" required></label>
+                <div class="row">
+                    <div class="left">
+                        <label for="name" id="name-label">* Name: </label>
+                    </div>
+                    <div class="right">
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <label for="email" id="email-label">* Email: </label>
+                    </div>
+                    <div class="right">
+                        <input type="email" id="email" placeholder="Enter your Email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <label for="number" id="number-label">* Age: </label>
+                    </div>
+                    <div class="right">
+                        <input type="number" min="1" max="125" id="number" placeholder="Age" required>
+                    </div>
+                </div>
             </div>
-            <label for="dropdown">Which option best describes your current role?
-                <select name="dropdown" id="dropdown">
-                    <option value="" disabled>Select an option</option>
-                    <option value="student">Student</option>
-                    <option value="full-time-job">Full Time Job</option>
-                    <option value="full-time-learner">Full Time Learner</option>
-                    <option value="prefer-not-to-say">Prefer not to say</option>
-                    <option value="other">Other</option>
-                </select>
-            </label>
-            <div id="user-recommendation">
-                    <label>* How likely is that you would recommend freeCodeCamp to a friend? </label>
+            <div class="row">
+                <div class="left">
+                    <label for="dropdown">Which option best describes your current role?</label>
+                </div>
+                <div class="right">
+                    <select name="dropdown" id="dropdown">
+                        <option value="" disabled>Select an option</option>
+                        <option value="student">Student</option>
+                        <option value="full-time-job">Full Time Job</option>
+                        <option value="full-time-learner">Full Time Learner</option>
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <label>* How likely is that you would recommend freeCodeCamp to a friend?</label>
+                </div>
+                <div class="right">
                     <ul>
-                            <li><label for="definitely"><input type="radio" name="recommend" id="definitely">Definitely</label></li>
-                            <li><label for="maybe"><input type="radio" name="recommend" id="maybe">Maybe</label></li>
-                            <li><label for="not sure"><input type="radio" name="recommend" id="not sure">Not sure</label></li>
+                        <li>
+                            <label for="definitely">
+                                <input type="radio" name="recommend" id="definitely">Definitely</label>
+                        </li>
+                        <li>
+                            <label for="maybe">
+                                <input type="radio" name="recommend" id="maybe">Maybe</label>
+                        </li>
+                        <li>
+                            <label for="not sure">
+                                <input type="radio" name="recommend" id="not sure">Not sure</label>
+                        </li>
                     </ul>
+                </div>
             </div>
-            <label for="fcc-like-dropdown">What do you like most in FCC:
+            <div class="row">
+                <div class="left">
+                    <label for="fcc-like-dropdown">What do you like most in FCC:</label>
+                </div>
+                <div class="right">
                     <select name="dropdown" id="fcc-like-dropdown">
                         <option value="" disabled selected>Select an option</option>
                         <option value="challenges">Challenges</option>
@@ -43,29 +88,73 @@
                         <option value="community">Community</option>
                         <option value="open-source">Open source</option>
                     </select>
-                </label>
-                <div id="improvements">
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
                     <label>Things that should be improved in the future (Check all that apply):</label>
+                </div>
+                <div class="right">
                     <ul>
-                        <li><label for="front-end"><input type="checkbox" id="front-end" value="1">Front-end Projects</label></li>
-                        <li><label for="back-end"><input type="checkbox" id="back-end" value="2">Back-end Projects</label></li>
-                        <li><label for="data-visualization"><input type="checkbox" id="data-visualization" value="3">Data Visualization</label></li>
-                        <li><label for="challenges"><input type="checkbox" id="challenges" value="4">Challenges</label></li>
-                        <li><label for="open-source-community"><input type="checkbox" id="open-source-community" value="5">Open Source Community</label></li>
-                        <li><label for="gitter-help-rooms"><input type="checkbox" id="gitter-help-rooms" value="6">Gitter help rooms</label></li>
-                        <li><label for="videos"><input type="checkbox" id="videos" value="7">Videos</label></li>
-                        <li><label for="city-meetups"><input type="checkbox" id="city-meetups" value="8">City Meetups</label></li>
-                        <li><label for="wiki"><input type="checkbox" id="wiki" value="9">Wiki</label></li>
-                        <li><label for="forum"><input type="checkbox" id="forum" value="10">Forum</label></li>
-                        <li><label for="additional-courses"><input type="checkbox" id="additional-courses" value="11">Additional Courses</label></li>
+                        <li>
+                            <label for="front-end">
+                                <input type="checkbox" id="front-end" value="1">Front-end Projects</label>
+                        </li>
+                        <li>
+                            <label for="back-end">
+                                <input type="checkbox" id="back-end" value="2">Back-end Projects</label>
+                        </li>
+                        <li>
+                            <label for="data-visualization">
+                                <input type="checkbox" id="data-visualization" value="3">Data Visualization</label>
+                        </li>
+                        <li>
+                            <label for="challenges">
+                                <input type="checkbox" id="challenges" value="4">Challenges</label>
+                        </li>
+                        <li>
+                            <label for="open-source-community">
+                                <input type="checkbox" id="open-source-community" value="5">Open Source Community</label>
+                        </li>
+                        <li>
+                            <label for="gitter-help-rooms">
+                                <input type="checkbox" id="gitter-help-rooms" value="6">Gitter help rooms</label>
+                        </li>
+                        <li>
+                            <label for="videos">
+                                <input type="checkbox" id="videos" value="7">Videos</label>
+                        </li>
+                        <li>
+                            <label for="city-meetups">
+                                <input type="checkbox" id="city-meetups" value="8">City Meetups</label>
+                        </li>
+                        <li>
+                            <label for="wiki">
+                                <input type="checkbox" id="wiki" value="9">Wiki</label>
+                        </li>
+                        <li>
+                            <label for="forum">
+                                <input type="checkbox" id="forum" value="10">Forum</label>
+                        </li>
+                        <li>
+                            <label for="additional-courses">
+                                <input type="checkbox" id="additional-courses" value="11">Additional Courses</label>
+                        </li>
                     </ul>
                 </div>
-                <label for="comments">
-                        Any Comments or Suggestions?
+            </div>
+            <div class="row">
+                <div class="left">
+                    <label for="comments">
+                        Any Comments or Suggestions?</label>
+                </div>
+                <div class="right">
                     <textarea name="" id="comments"></textarea>
-                </label>
-                <button type="submit">Submit</button>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
         </form>
     </div>
 </body>
+
 </html>
