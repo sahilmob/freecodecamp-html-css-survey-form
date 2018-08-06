@@ -97,3 +97,27 @@ body {
     border-radius: 2px;
     border: 1px solid #c0c0c0;
 }
+
+#fcc-improvements {
+    margin-top: 20px;
+}
+
+#fcc-improvements .left label {
+    display: block;
+}
+
+#fcc-improvements .right ul {
+    margin: 10px;
+    margin-top: 0px;
+    padding: 0;
+    list-style: none;
+}
+
+#fcc-improvements .right ul li label {
+    display: flex;
+    align-items: center;
+}
+
+#fcc-improvements .right ul li label input {
+    margin-right: 5px;
+}
