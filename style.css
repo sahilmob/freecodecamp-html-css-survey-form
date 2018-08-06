@@ -83,3 +83,17 @@ body {
 #fcc-recommend .right ul li label input {
     margin-right: 5px;
 }
+
+#fcc-like {
+    margin-top: 20px;
+}
+
+#fcc-like .right select {
+    height: 35px;
+    width: 140px;
+    margin: 10px;
+    margin-top: 0;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #c0c0c0;
+}
