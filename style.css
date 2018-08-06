@@ -121,3 +121,15 @@ body {
 #fcc-improvements .right ul li label input {
     margin-right: 5px;
 }
+
+#comments {
+    margin-top: 20px;
+}
+
+#comments .right textarea {
+    margin: 10px;
+    margin-top: 0px;
+    height: 50px;
+    resize: vertical;
+    width: 280px;
+}
