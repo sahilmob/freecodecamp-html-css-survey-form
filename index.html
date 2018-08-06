@@ -12,9 +12,11 @@
     <div id="form">
         <p id="description">Let us know how we can improve freeCodeCamp</p>
         <form action="" id="survey-form">
-            <label for="name" id="name-label">* Name: <input type="text" id="name" placeholder="Enter your name"> required</label>
-            <label for="email" id="email-label">* Email: <input type="email" id="email" placeholder="Enter your Email" required></label>
-            <label for="number" id="number-label">* Age: <input type="number" min="1" max="125" id="number" placeholder="Age" required></label>
+            <div id="basic-info">
+                    <label for="name" id="name-label">* Name: <input type="text" id="name" placeholder="Enter your name" required></label>
+                    <label for="email" id="email-label">* Email: <input type="email" id="email" placeholder="Enter your Email" required></label>
+                    <label for="number" id="number-label">* Age: <input type="number" min="1" max="125" id="number" placeholder="Age" required></label>
+            </div>
             <label for="dropdown">Which option best describes your current role?
                 <select name="dropdown" id="dropdown">
                     <option value="" disabled>Select an option</option>
