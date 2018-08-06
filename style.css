@@ -7,3 +7,12 @@ body{
     font-family: 'Raleway', Helvetica, sans-serif;
     background-color: #a9d7d1;
 }
+
+#title{
+    text-align: center;
+}
+
+#form {
+    max-width: 900px;
+    margin: 0 auto;
+}
